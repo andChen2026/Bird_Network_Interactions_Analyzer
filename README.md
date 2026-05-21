@@ -34,4 +34,8 @@ A massive memory bottleneck will be event propagation. If bird A sings, it may a
 An important note to make is that the greater the degree of the bird, the more likely it will be invoked and an action to be performed. Thus, we will use this heuristic in our implementation. We will rank the birds by their degree metric and cache those that are more likely to be invoked. For those that have low degrees, we will fetch them from memory. This scheme reduces the average memory fetch time, which should realize speed gains. Caveat: if the graph is incredibly dense (connectivity is nearly 1), then no memory and speed gains will be realized.
 
 The Network Graph will be based on the physical location of the bird, with each site having its own. Individual bird recordings will grouped together as one Node based on proximity. Afterwards, interactions among individual birds will be processed and analyzed using network based algorithms.
-
+### Contributions
+1. Individual Identities
+2. Survival Analysis (CJS model)
+3. Abundance Estimation
+4. Your Network Analysis
