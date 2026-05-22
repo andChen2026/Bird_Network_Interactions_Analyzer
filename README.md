@@ -39,3 +39,11 @@ The Network Graph will be based on the physical location of the bird, with each 
 2. Survival Analysis (CJS model)
 3. Abundance Estimation
 4. Your Network Analysis
+## Tasks
+Week 1
+- Utilize a time segmentation technique to identity overlaps in events that have occurred 
+	- If a bird is close enough to another when an event occurs, then focus on that for an interaction
+- Define a mathematical model of an interaction (IMPORTANT)
+- Use the visual data to identify any interesting trends 
+	- If there are any, then we will progress to Bayesian Inference, Social Graphs, Algorithms, etc.
+- Read on the interactions of birds: Competition, Aggression, Mating season
