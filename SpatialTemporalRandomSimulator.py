@@ -3,7 +3,7 @@ Spatial Temporal Random Interactions Simulator
 '''
 from random import randint
 
-class SpacialTemporalRandomSimulator:
+class SpatialTemporalRandomSimulator:
     '''
     The simulator class generates one ovenbird territory and simulates the distribution of events \n
     For each simulation, there will be a heatmap visualization of the distribution \n
@@ -25,7 +25,7 @@ if __name__ == "__main__":
             It is expected that this is not the case and that we would see some grooves and valleys, in which case we have something to work off \n
            '''
     print(f"{info}")
-    rand_numbers = [SpacialTemporalRandomSimulator(randint(0, 1000), randint(1, 10), (randint(0, 200), randint(0, 200))) for x in range(0, 10)]
+    rand_numbers = [SpatialTemporalRandomSimulator(randint(0, 1000), randint(1, 10), (randint(0, 200), randint(0, 200))) for x in range(0, 10)]
     num_info = [str(rand_numbers[x]) for x in range(0, len(rand_numbers))]
 
     for info in num_info:
