@@ -2,6 +2,10 @@
 Spatial Temporal Random Interactions Simulator
 '''
 from random import randint
+import pandas as pd
+import geopandas as gpd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 class SpatialTemporalRandomSimulator:
     '''
@@ -14,6 +18,7 @@ class SpatialTemporalRandomSimulator:
         self.x, self.y = coors # Tuple unpacking
         self.r = radius # The radius
         self.seed = seed # Choose a random seed for this simulator object
+        self.dist = None # extended later, choose a probability distribution that lies on the ovenbird territory
     
     def __str__(self) -> str:
         return f'''The circle has radius {self.r} at ({self.x}, {self.y}) with simulation seed {self.seed}'''
