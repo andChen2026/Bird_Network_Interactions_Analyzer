@@ -5,10 +5,10 @@ from random import randint
 
 class SpacialTemporalRandomSimulator:
     '''
-    The simulator class generates ovenbird territories and simulates the distribution of events \n
-    For each simulation, there will be  \n
-    It will be extended to include many other types of probability distributions for analyzing \n
-
+    The simulator class generates one ovenbird territory and simulates the distribution of events \n
+    For each simulation, there will be a heatmap visualization of the distribution \n
+    Each ovenbird territory will have a radius and (x, y) coordinates along with a probability distribution (extended) \n 
+    The analysis will consist of running statistical methods to analyze the fit given the probability distribution: P (data | distribution) \n
     '''
     def __init__(self, seed: int, radius: int, coors: tuple) -> None:
         self.x, self.y = coors # Tuple unpacking
