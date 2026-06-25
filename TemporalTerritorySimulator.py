@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-class SpatialTemporalTerritoryRandomSimulator:
+class TemporalTerritorySimulator:
     '''
     The Simulator class generates random acoustic events for a single Ovenbird 
     territory, focusing on temporal distribution. Each event has a start time 
@@ -50,7 +50,7 @@ if __name__ == "__main__":
             to analyze.
            '''
     print(f"{info}")
-    rand_numbers = [SpatialTemporalTerritoryRandomSimulator(randint(0, 1000), randint(1, 10), (randint(0, 200), randint(0, 200))) for x in range(0, 10)]
+    rand_numbers = [TemporalTerritorySimulator(randint(0, 1000), randint(1, 10), (randint(0, 200), randint(0, 200))) for x in range(0, 10)]
     num_info = [str(rand_numbers[x]) for x in range(0, len(rand_numbers))]
 
     for info in num_info:
